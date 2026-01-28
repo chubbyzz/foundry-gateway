@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundry VTT Gateway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+      
+      :root {
+        --vtt-yellow: #ffc107;
+        --vtt-yellow-hover: #e6ae00;
+        --vtt-bg: #0d0d0e;
+        --vtt-card-bg: #141416;
+        --vtt-border: #232326;
+        --vtt-text-muted: #71717a;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--vtt-bg);
+        color: #f4f4f5;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .font-display {
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .vtt-button {
+        background-color: var(--vtt-yellow);
+        color: #000;
+        font-weight: 700;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .vtt-button:hover:not(:disabled) {
+        background-color: var(--vtt-yellow-hover);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+      }
+
+      .vtt-button:active:not(:disabled) {
+        transform: translateY(0);
+      }
+
+      .vtt-card {
+        background-color: var(--vtt-card-bg);
+        border: 1px solid var(--vtt-border);
+      }
+
+      /* Minimal scrollbar */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #27272a;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--vtt-yellow);
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

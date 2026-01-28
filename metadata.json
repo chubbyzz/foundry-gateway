@@ -1,0 +1,5 @@
+{
+  "name": "Foundry VTT Gateway",
+  "description": "A sleek landing page to connect to a Foundry VTT server with dynamic tunnel URL management and automated status checking with exponential backoff.",
+  "requestFramePermissions": []
+}
