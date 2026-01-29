@@ -17,7 +17,7 @@
         --vtt-border: #232326;
         --vtt-text-muted: #71717a;
       }
-
+      
       body {
         margin: 0;
         padding: 0;
@@ -25,49 +25,55 @@
         color: #f4f4f5;
         font-family: 'Inter', sans-serif;
       }
-
+      
       .font-display {
         font-weight: 800;
         letter-spacing: -0.02em;
       }
-
+      
       .vtt-button {
         background-color: var(--vtt-yellow);
         color: #000;
         font-weight: 700;
         transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       }
-
+      
       .vtt-button:hover:not(:disabled) {
         background-color: var(--vtt-yellow-hover);
         transform: translateY(-1px);
         box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
       }
-
+      
       .vtt-button:active:not(:disabled) {
         transform: translateY(0);
       }
-
+      
       .vtt-card {
         background-color: var(--vtt-card-bg);
         border: 1px solid var(--vtt-border);
       }
-
+      
       /* Minimal scrollbar */
+      
       ::-webkit-scrollbar {
         width: 4px;
       }
+      
       ::-webkit-scrollbar-track {
         background: transparent;
       }
+      
       ::-webkit-scrollbar-thumb {
         background: #27272a;
         border-radius: 10px;
       }
+      
       ::-webkit-scrollbar-thumb:hover {
         background: var(--vtt-yellow);
       }
     </style>
+
+  <link rel="stylesheet">
     <script type="importmap">
     {
       "imports": {
@@ -79,10 +85,9 @@
       }
     }
     </script>
-  <link rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-IKyRf56a.js"></script>
 </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="./index.tsx"></script>
 </body>
 </html>
